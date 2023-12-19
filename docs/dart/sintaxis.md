@@ -1,0 +1,191 @@
+
+# Sintaxis básica de Dart
+
+## Hello Word con Dart
+
+1. Crear un archivo nuevo, darle el nombre de `main.dart`
+2. Escribir en el :
+
+```dart title="main.dart"
+// Nuestro primer programa
+
+void main(){
+    print("Hello Word");
+}
+
+```
+
+Para probar nuestro primer programa, abrimos la terminal
+
+```bash
+dart main.dart
+```
+
+Obtenemos en la salida
+
+```bash
+    Hello Word
+```
+
+## Comentarios
+
+Los comentarios nos ayudan a documentar o darnos pistas dentro del codigo. Todo comentario sera ignorado por el compilador, no importa que el comentario contenga lineas de codigo validas y correctas, el compilador simplemente lo pasara por alto.
+
+Hay dos tipos bloque de comentario
+
+1. Una linea
+2. Multi linea
+
+### Comentario de una linea
+
+Para agregar comentario en un linea del archivo se inicia con doble diagonal (`slash`) (`//`).
+Cuando se coloca doble slash, a partir de ahi todo lo que esta delante se convierte en comentario y el compilador de ignora
+
+```dart
+// Esto es un comentario
+// Otro comentario de una linea
+```
+
+### Bloque de comentario o multi linea
+
+Este tipo de bloque de comentario nos sirve para envolver varias lineas de código, sin la necesidad de estar colocando en cada linea `doble slash`.
+El bloque de comentario debe iniciar con diagonal junto con un asterisco (`/*`) y cerrando el bloque con asterisco y diagonal (`*/`)
+
+```dart
+/* inicia el bloque de comenario
+    Bloque de comentario
+    Continua siendo comentario
+    ...
+
+termina el bloque de comentario */
+```
+
+## Variables y tipos de datos
+
+!!! Note
+    **Toda sentencia termina con punto y come (`;`).**
+
+### Tipos de datos en Dart
+
+Dart soporta los siguientes tipos de datos, aquí solo usaremos los mas importantes y básicos.
+
+- Numbers (int, double)
+- Strings (String)
+- Booleans (bool)
+- Lists (List, also known as arrays)
+- Sets (Set)
+- Maps (Map)
+- Object: The superclass of all Dart classes except Null.
+- Enum: The superclass of all enums.
+- Future and Stream: Used in asynchrony support.
+- Iterable: Used in for-in loops and in synchronous generator functions.
+- The value null (Null)
+
+### Numbers (Números)
+
+#### int (entero)
+
+El valor int (entero) no tan largo que 64 btis, dependiendo de la plataforma. En plataformas nativa el valor va desde -2<sup>63</sup> hasta 2<sup>63</sup> -1, en la web es de el valor va desde -2<sup>53</sup> hasta 2<sup>53</sup> -1
+
+```dart
+int numero1 = 23;
+int numero2 = 34234;
+int numero3 = -6;
+```
+
+#### doble (Doble o Real)
+
+Precision de 64 bits con punto flotante, como marca la especificación del estándar IEEE 754
+
+```dart
+double numero1 = 0.4;
+double numero2 = -23.23;
+double numero3 = 546.34;
+```
+
+### Strings
+
+Un `String` en Dart es una secuencia de códigos UTF-16. Se puede utilizar comillas simples (`''`) o comillas dobles (`""`), para envolver la cadena de caracteres.
+
+#### Cadena en una linea
+
+```dart
+String s1 = 'Single quotes work well for string literals.';
+String s2 = "Double quotes work just as well.";
+String s3 = 'It\'s easy to escape the string delimiter.';
+String s4 = "It's even easier to use the other delimiter.";
+```
+
+#### Cadena en multi linea
+
+```dart
+String s1 = '''
+You can create
+multi-line strings like this one.
+''';
+
+String s2 = """This is also a
+multi-line string.""";
+```
+
+## Declaración de variables
+
+La forma de declarar variables, tiene la siguiente estructura:
+
+```bash
+tipo_de_dato nombre_de_variable = valor ;
+```
+
+![](./../assets/declaracion_variable.png#only-light)
+![](./../assets/declaracion_variable_dark.png#only-dark)
+
+### Booleans
+
+La representación de un valor booleano, tiene el nombre de `bool` en Dart. Solo puede contener dos tipos de valores `false` y `true`.
+
+```dart
+bool isAlive = true;
+bool isEmpty = false;
+bool isLogin = false;
+```
+
+## Función `print`
+
+La función print nos sirve para enviar mensajes o información a la salida estándar del sistema (stdout).
+Se coloca la palabra `print` y entre sus paréntesis todos los argumentos que queramos colocar, puede ser cualquier tipo de dato.
+
+```dart
+print("Hola mundo");
+
+print(4 + 3);
+
+print(variable);
+```
+
+![print](../assets/print.png#only-light)
+![print](../assets/print_dark.png#only-dark)
+
+## Estructura base de un programa Dart
+
+La estructura de todo archivo Dart que queramos ejecutar debe contener forzosamente la función `main`. *Por el momento asi estaremos trabajando*
+
+!!! Note
+    Todo el código que escribamos debe estar dentro de la función `main()`, SIEMPRE.
+    *En un futuro aprenderemos qué y cómo se debe y puede escribir fuera de ella.*
+
+```dart
+//función main
+
+void main(){ //inicia la función
+    //contenido del programa
+    print("Hola mundo");
+
+}//termina la función main
+```
+
+![funcion main](../assets/main_funcion.png#only-light)
+![funcion main](../assets/main_funcion_dark.png#only-dark)
+
+---
+
+Más información en: [https://dart.dev/language/built-in-types](https://dart.dev/language/built-in-types)
