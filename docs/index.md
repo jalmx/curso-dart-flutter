@@ -9,7 +9,7 @@ Sumérgete en el maravilloso mundo de Flutter, el marco de trabajo de código ab
    2. Configuración del entorno de desarrollo (IDE).
 2. **Sintaxis Básica de Dart**
    1. Variables y tipos de datos.
-   2. Estructuras de control: if, else, switch.
+   2. Estructuras de control: if, else.
    3. Bucles: for, while.
 3. **Funciones en Dart**
    1. Declaración de funciones
