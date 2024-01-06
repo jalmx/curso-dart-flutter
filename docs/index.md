@@ -9,13 +9,15 @@ Sumérgete en el maravilloso mundo de Flutter, el marco de trabajo de código ab
    2. Configuración del entorno de desarrollo (IDE).
 2. **Sintaxis Básica de Dart**
    1. Variables y tipos de datos.
-   2. Estructuras de control: if, else.
+   2. Estructuras de control: if, if-else.
    3. Bucles: for, while.
 3. **Funciones en Dart**
    1. Declaración de funciones
    2. Parámetros y valores de retorno
    3. Funciones anónimas y funciones de flecha
-4. **Conceptos Básicos de POO**
+4. **Listas, Mapas y Conjuntos**
+    1. Métodos y operaciones comunes de colecciones.
+5. **Conceptos Básicos de POO**
     1. Clases y objetos.
     2. Herencia
     3. Polimorfismo
@@ -23,8 +25,6 @@ Sumérgete en el maravilloso mundo de Flutter, el marco de trabajo de código ab
     5. Paquetes y bibliotecas en Dart
     6. Manejo de Excepciones
     7. Try, catch, finally.
-5. **Listas, Mapas y Conjuntos**
-    1. Métodos y operaciones comunes de colecciones.
 6. **Iteradores y Streams**
     1. Uso de forEach, map, filter, etc.
     2. Streams y manejo asíncrono.
@@ -39,7 +39,7 @@ Sumérgete en el maravilloso mundo de Flutter, el marco de trabajo de código ab
     1. Concepto de widget
     2. Tipos de widgets (StatelessWidget, StatefulWidget)
     3. Creación y personalización de widgets
-10. **Navegación y rutas en Flutter**
+10.  **Navegación y rutas en Flutter**
     1. Navegación entre pantallas
     2. Paso de datos entre pantallas
 11. **Gestión de estado en Flutter**
